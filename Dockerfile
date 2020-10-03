@@ -1,5 +1,5 @@
 FROM alpine
-ENV VER=v4.28.1
+ENV VER=v4.28.2
 ENV CONFIG_JSON=none
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && curl -L -H "Cache-Control: no-cache" -o /v2ray.zip https://github.com/v2ray/v2ray-core/releases/download/$VER/v2ray-linux-64.zip \
